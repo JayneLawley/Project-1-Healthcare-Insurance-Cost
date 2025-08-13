@@ -15,17 +15,18 @@
 
 ## Hypothesis and how to validate?
 * People who smoke are likely to have higher insurance charges than those who don’t.
-Higher BMI may also be linked to increased charges. 
-Age and region might play a role in the variation of costs.
+* Higher BMI may also be linked to increased charges. 
+* Insurance charges are expected to increase with age.
+* Geographic region might play a role in the variation of costs of medical insurance.
 
 I will use visualisations like boxplots, scatter plots and bar charts to compare charges across different groups (for example smokers vs non-smokers, different BMI levels, age ranges and regions). I'll also review summary statistics such as averages and counts to support findings.
 
  
 
 ## Project Plan
-* Data Collection and setup - the data was downloaded from Kaggle and saved as csv file into the 'raw' data folder.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+* Data Collection and setup - the data will be downloaded from Kaggle and saved as csv file into the 'raw' data folder.
+* The data will be reviewed for duplicates, missing values, incorrect datatype catgeorisation and processed before analysis aginst hypotheses
+* Data visualisation technique (such as boxplot, barchart, line, and violin) will be selected based on what is best for the type(s) of data being compared and analsysed
 
 ## The rationale to map the business requirements to the Data Visualisations
 * List your business requirements and a rationale to map them to the Data Visualisations
@@ -76,8 +77,8 @@ I will use visualisations like boxplots, scatter plots and bar charts to compare
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+* For help with looking at what types of plot visualisation worked best I looked for help from the website: https://www.data-to-viz.com/#line. I have had help overcoming coding issues with the help of my tutor Vasi, and I have used Chat GPT 4.0 and CoPilot for guidance on resolving issues with coding.
+
 
 ### Content 
 
@@ -93,4 +94,4 @@ I will use visualisations like boxplots, scatter plots and bar charts to compare
 
 
 ## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+* Thank you to Vasi who has provided support through this project.
