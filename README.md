@@ -1,23 +1,29 @@
-# Project XYZ
+# Project 1 Healthcare Insurance Cost
 
-**Project XYZ** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+**Project Healthcare Insurance** explores how personal and geographic factors (such as age, gender, BMI, smoking status, and region) influence insurance costs. It will look at how this data can be used to estimate healthcare expenses and provide insights and predictive reports around healthcare insurance charges based.
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
+* The dataset contains information about individual's age, gender, body mass index (BMI), number of children, smoking status, and region within the United States in relation to the medical insurance charges they were charged.
 
 
 ## Business Requirements
-* Describe your business requirements
+* To understand how different geographical, personal and lifestyle factors affect healthcare insurance costs in the United States, in order to improve cost estimation, support pricing strategies and identify areas of customer risk.
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+* People who smoke are likely to have higher insurance charges than those who don’t.
+Higher BMI may also be linked to increased charges. 
+Age and region might play a role in the variation of costs.
+
+I will use visualisations like boxplots, scatter plots and bar charts to compare charges across different groups (for example smokers vs non-smokers, different BMI levels, age ranges and regions). I'll also review summary statistics such as averages and counts to support findings.
+
+ 
 
 ## Project Plan
-* Outline the high-level steps taken for the analysis.
+* Data Collection and setup - the data was downloaded from Kaggle and saved as csv file into the 'raw' data folder.
 * How was the data managed throughout the collection, processing, analysis and interpretation steps?
 * Why did you choose the research methodologies you used?
 
