@@ -24,9 +24,9 @@ I will use visualisations like boxplots, scatter plots and bar charts to compare
  
 
 ## Project Plan
-* Data Collection and setup - the data will be downloaded from Kaggle and saved as csv file into the 'raw' data folder.
-* The data will be reviewed for duplicates, missing values, incorrect datatype catgeorisation and processed before analysis aginst hypotheses
-* Data visualisation technique (such as boxplot, barchart, line, and violin) will be selected based on what is best for the type(s) of data being compared and analsysed
+* **Data Collection and setup**: The dataset will be downloaded from Kaggle and saved as csv file into the 'raw' data folder.
+* **Initial Data Review and Cleaning**: The data will be checked for duplicates, missing values, and incorrect datatypes. Any necessary cleaning will be completed before analysis is undertaken.
+* **Exploratory Data Analysis and Visualisation**: Visualisation techniques (such as boxplots, barcharts, line plots, and violin plots) will be used to explore the data. Visuals will be selected based on what best suits the data being compared and the hypotheses being tested. 
 
 ## The rationale to map the business requirements to the Data Visualisations
 * List your business requirements and a rationale to map them to the Data Visualisations
@@ -77,8 +77,9 @@ I will use visualisations like boxplots, scatter plots and bar charts to compare
 
 ## Credits 
 
-* For help with looking at what types of plot visualisation worked best I looked for help from the website: https://www.data-to-viz.com/#line. I have had help overcoming coding issues with the help of my tutor Vasi, and I have used Chat GPT 4.0 and CoPilot for guidance on resolving issues with coding.
-
+* For help choosing apppropraite visualisation types, I referred to [data to Viz]: https://www.data-to-viz.com/#line, and my tutorial notebooks developed whioole working through the Code Insitute LMS. 
+* I received support from my tutor Vasi for resolviong coding issues and understanding how to approach certain tasks.
+* I have used Chat GPT 4.0 and GitHub CoPilot to debug code, understand errors, and explore different ways to write and (or improve) functions and code.
 
 ### Content 
 
