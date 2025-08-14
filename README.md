@@ -82,18 +82,18 @@ While this project does not involve predictive modelling or decision-making, itâ
 
 ## Dashboard Design
 - The project does not include a formal dashboard, as the focus is on exploratory data analysis and visualisation using Jupyter Notebooks. However, the notebook has been structured in a clear and logical way to serve a similar function, walking the user through the insights step by step. The combination of markdown commentary and visuals is designed to communicate findings to both technical and non-technical audiences.
-- Visuals are varied to suit different preferences (e.g. scatter plots, boxplots, violin plots, line plots, histograms). Some less successful plots have been kept to show the exploratory process and demonstrate why certain chart types were chosen over others.
+- A range of visual types were used to suit different audiences (e.g. scatter plots, boxplots, violin plots, line plots, histograms). Some less successful plots have been kept to show the exploratory process and demonstrate why certain chart types were chosen over others.
 - Annotations, titles, and axis labels were added to support understanding without needing to read raw code. I have used comments explain what each plot is trying to show (and what the key insights are) for both technical and non-technical audiences.
 
 ## Unfixed Bugs
-- There is one small bug in the Jupyter notebook related to the use of a try block for creating folders with os.makedirs. The code below was included:
-import os
-try:
-  # create your folder here
-  # os.makedirs(name='')
-except Exception as e:
+- There was one small bug in the Jupyter notebook related to a code block intended for folder creation. The code below is shown:
+import os  
+try:  
+  # create your folder here  
+  # os.makedirs(name='')  
+except Exception as e:  
   print(e)
-As this section was not essential to the functioning of the notebook (and the folder structure was already in place), the bug was left unfixed. It does not affect the analysis or outputs of the project.
+As this section was not essential to the functioning of the notebook, and was intended to be replaced with a conclusion section later, the bug was left unfixed and eventually removed at the end of the project. It did not affect the analysis or outputs during project development.
 
 ## Knowledge Gaps
 A few knowledge gaps were identified around:
@@ -129,9 +129,8 @@ In this project I set out to explore how personal, lifestyle, and regional facto
 
 Using a range of visualisation techniques (including Matplotlib, Seaborn, and Plotly), I tested each hypothesis and refined the approach as insights became visible. Some visuals were included even where clarity was lower, to demonstrate the exploratory process and support learning.
 
-The project met its goal (to uncover relationships in the data and explain what influences variations in insurance charges), It also allowed me to develop and demonstrate skills in data cleaning, visual data analysis, and data driven storytelling.
+The project met its goal (to uncover relationships in the data and explain what influences variations in insurance charges). It also allowed me to develop and demonstrate skills in data cleaning, visual data analysis, and data driven storytelling.
 
-## Deployment
 ### Heroku
 
 * The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
@@ -145,15 +144,13 @@ The project met its goal (to uncover relationships in the data and explain what 
 5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
 6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
-
 ## Main Data Analysis Libraries
 * Pandas, Matplotlib, Seaborn, Plotly
-
 
 ## Credits 
 * For help choosing apppropraite visualisation types, I referred to [data to Viz]: https://www.data-to-viz.com/#line, and my tutorial notebooks developed whioole working through the Code Insitute LMS. 
 * I used the CDC (U.S. Centers for Disease Control and Prevention) website for medical BMI catgeory groupings https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html?CDC_AAref_Val=https://www.cdc.gov/obesity/basics/adult-defining.html
-* I received support from my tutor Vasi for resolviong coding issues and understanding how to approach certain tasks.
+* I received support from my tutor Vasi Pavaloi for resolviong coding issues and understanding how to approach certain tasks.
 * I have used Chat GPT 4.0 and GitHub CoPilot to debug code, understand errors, and explore different ways to write and (or improve) functions and code.
 
 ### Content 
@@ -164,7 +161,6 @@ The project met its goal (to uncover relationships in the data and explain what 
 ### Media
 - The photos used on the home and sign-up page are from This Open-Source site
 - The images used for the gallery page were taken from this other open-source site
-
 
 ## Acknowledgements (optional)
 * Thank you to Vasi who has provided support through this project.
