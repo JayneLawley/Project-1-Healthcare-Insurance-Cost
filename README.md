@@ -18,13 +18,13 @@ This project explores how personal and geographic factors (such as age, gender, 
 * Number of children might affect medical healthcare insurance charges.
 * Sex may influence medical healthcare insurance charges.
 
-I will use visualisations like boxplots, scatter plots and bar charts to compare charges across different groups (for example smokers vs non-smokers, different BMI levels, age ranges and regions) to check the above hypothese.
+I will use visualisations like boxplots, scatter plots and bar charts to compare charges across different groups (for example smokers vs non-smokers, different BMI levels, age ranges and regions) to check the above hypotheses.
  
 
 ## Project Plan
 * **Data Collection and setup**: The dataset was downloaded from Kaggle and saved as csv file into the 'raw' data folder.
 * **Initial Data Review and Cleaning**: The data was reviewed for duplicates, missing values, and incorrect datatypes. Any necessary cleaning was completed before analysis began.
-* **Exploratory Data Analysis and Visualisation**: Visualisation techniques (such as boxplots, scatter plots, bar charts, line plots, and violin plots) have been used explore the data. Chart types were seleceted based on what best suited the data being compared and the hypotheses being tested. 
+* **Exploratory Data Analysis and Visualisation**: Visualisation techniques (such as boxplots, scatter plots, bar charts, line plots, and violin plots) have been used to explore the data. Chart types were selected based on what best suited the data being compared and the hypotheses being tested. 
 
 ## The rationale to map the business requirements to the Data Visualisations
 The aim of this project was to understand how different factors influence healthcare insurance charges in the United States (this type of information can help with predictive analysis of charges, and can help identify risks). Visualisation was the main tool used to explore patterns, compare groups, and test hypotheses. Here's how the business questions were mapped to the visual tools used:
@@ -43,7 +43,7 @@ As age is a continuous variable, plotting it with line and scatter plots helped 
 
 **Does region influence charges?**
 - Visualisations used: Boxplots and violin plots by region.
-I used a boxpolt and fond limited inflrunce that region inflyuenced charges. I then used a violin plot to delve deeper. The plot tpyes made it easy to compare distributions across the four regions. These visuals helped confirm that region had limited influence.
+I used a boxplot and found limited evidence that region influenced charges. I then used a violin plot to delve deeper. The plot tpyes made it easy to compare distributions across the four regions. These visuals helped confirm that region had limited influence.
 
 **Do other demographic factors (like sex and number of children) affect charges?**
 - Visualisations used: Boxplots with smoker hue
@@ -59,17 +59,17 @@ I used visual exploratory analysis (EDA) as my primary method for indentifying r
 - Histograms and KDE plots: to show charge distributions for smokers vs non-smokers.
 - Line plots: used for trends across binned ages and rounded BMI values.
 
-I tested each business question with a visualisation that best suited the variable types (categorical vs numerical, numerical vs numerical, and category vs categeory). For example:
+I tested each business question with a visualisation that best suited the variable types (categorical vs numerical, numerical vs numerical, and category vs category). For example:
 - BMI was continuous, so I used scatter plots first, then grouped it into medical categories to simplify as the first plot was too noisy.
 - Region was categorical, so I used box and violin plots to compare spreads. I used resources such as data to Viz to help guide me on what might work best (https://www.data-to-viz.com/).
 
 ## Limitation and alternative approaches:
 - Some variables (like region, number of children and sex) showed little variation or impact on charges, limiting their usefulness in drawing insights and conclusions. 
-- BMI values were unevely distributed. I tried a line plot using rounded values, and found some limitations within the dataset information in the higher ranges.
+- BMI values were unevenly distributed. I tried a line plot using rounded values, but found some limitations within the dataset information (particularly in the higher ranges).
 
 ## Use of generative AI tools: 
-- I used CoPilot when writing code to help troubleshoot, use of this also sped up commenting my code. 
-- I used Chat GPT 4.0 to also help debug code, and suggest clearer vsualisation choices.
+- I used CoPilot when writing code to help troubleshoot, and it also helped speed up commenting on my code.
+- I used Chat GPT 4.0 to also help debug code, and suggest clearer visualisation choices.
 - I have used Chat GPT 4.0 to check my markdown, and help review my work for clarity.
 
 ## Ethical and legal considerations
@@ -83,17 +83,17 @@ While this project does not involve predictive modelling or decision-making, itâ
 ## Dashboard Design
 - The project does not include a formal dashboard, as the focus is on exploratory data analysis and visualisation using Jupyter Notebooks. However, the notebook has been structured in a clear and logical way to serve a similar function, walking the user through the insights step by step. The combination of markdown commentary and visuals is designed to communicate findings to both technical and non-technical audiences.
 - A range of visual types were used to suit different audiences (e.g. scatter plots, boxplots, violin plots, line plots, histograms). Some less successful plots have been kept to show the exploratory process and demonstrate why certain chart types were chosen over others.
-- Annotations, titles, and axis labels were added to support understanding without needing to read raw code. I have used comments explain what each plot is trying to show (and what the key insights are) for both technical and non-technical audiences.
+- Annotations, titles, and axis labels were added to support understanding without needing to read raw code. I have used comments to explain what each plot is trying to show (and what the key insights are) for both technical and non-technical audiences.
 
 ## Unfixed Bugs
-- There was one small bug in the Jupyter notebook related to a code block intended for folder creation. The code below is shown:
+- There was one small bug in the Jupyter notebook related to a code block intended for folder creation. The code is shown below:
 import os  
 try:  
   # create your folder here  
   # os.makedirs(name='')  
 except Exception as e:  
   print(e)
-As this section was not essential to the functioning of the notebook, and was intended to be replaced with a conclusion section later, the bug was left unfixed and eventually removed at the end of the project. It did not affect the analysis or outputs during project development.
+As this section was not essential to the functioning of the notebook, and was intended to be replaced with a conclusion section later. This code has since been removed.It did not affect analysis, or outputs, during project development.
 
 ## Knowledge Gaps
 A few knowledge gaps were identified around:
@@ -148,8 +148,8 @@ The project met its goal (to uncover relationships in the data and explain what 
 * Pandas, Matplotlib, Seaborn, Plotly
 
 ## Credits 
-* For help choosing apppropraite visualisation types, I referred to [data to Viz]: https://www.data-to-viz.com/#line, and my tutorial notebooks developed whioole working through the Code Insitute LMS. 
-* I used the CDC (U.S. Centers for Disease Control and Prevention) website for medical BMI catgeory groupings https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html?CDC_AAref_Val=https://www.cdc.gov/obesity/basics/adult-defining.html
+* For help choosing apppropriate visualisation types, I referred to [data to Viz]: https://www.data-to-viz.com/#line, and my tutorial notebooks developed while working through the Code Insitute LMS. 
+* I used the CDC (U.S. Centers for Disease Control and Prevention) website for medical BMI category groupings https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html?CDC_AAref_Val=https://www.cdc.gov/obesity/basics/adult-defining.html
 * I received support from my tutor Vasi Pavaloi for resolviong coding issues and understanding how to approach certain tasks.
 * I have used Chat GPT 4.0 and GitHub CoPilot to debug code, understand errors, and explore different ways to write and (or improve) functions and code.
 
