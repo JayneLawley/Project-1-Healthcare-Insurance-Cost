@@ -1,6 +1,7 @@
 # Project 1 Healthcare Insurance Cost
 
-**Project Healthcare Insurance** explores how personal and geographic factors (such as age, gender, BMI, smoking status, and region) influence insurance costs. It will look at how this data can be used to estimate healthcare expenses and provide insights and predictive reports around healthcare insurance charges based.
+**Project Healthcare Insurance** 
+This project explores how personal and geographic factors (such as age, gender, BMI, smoking status, and region) influence insurance costs. The aim is to examine patterns and relationships in the data to better understand what drives variations in healthcare charges, using visual exploration and summary insights to explain the findings.
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
@@ -14,32 +15,79 @@
 
 
 ## Hypothesis and how to validate?
-* People who smoke are likely to have higher insurance charges than those who don’t.
-* Higher BMI may also be linked to increased charges. 
-* Insurance charges are expected to increase with age.
-* Geographic region might play a role in the variation of costs of medical insurance.
+* People who smoke are likely to have higher medical healthcare insurance charges than those who don’t.
+* Higher BMI may also be linked to increased medical healthcare insurance charges. 
+* Medical healthcare insurance charges increase with age.
+* Geographic region may influence medical healthcare insurance charges.
+* Number of children might affect medical healthcare insurance charges.
+* Sex may influence medical healthcare insurance charges.
 
-I will use visualisations like boxplots, scatter plots and bar charts to compare charges across different groups (for example smokers vs non-smokers, different BMI levels, age ranges and regions). I'll also review summary statistics such as averages and counts to support findings.
-
+I will use visualisations like boxplots, scatter plots and bar charts to compare charges across different groups (for example smokers vs non-smokers, different BMI levels, age ranges and regions) to check the above hypothese.
  
 
 ## Project Plan
-* **Data Collection and setup**: The dataset will be downloaded from Kaggle and saved as csv file into the 'raw' data folder.
-* **Initial Data Review and Cleaning**: The data will be checked for duplicates, missing values, and incorrect datatypes. Any necessary cleaning will be completed before analysis is undertaken.
-* **Exploratory Data Analysis and Visualisation**: Visualisation techniques (such as boxplots, barcharts, line plots, and violin plots) will be used to explore the data. Visuals will be selected based on what best suits the data being compared and the hypotheses being tested. 
+* **Data Collection and setup**: The dataset was downloaded from Kaggle and saved as csv file into the 'raw' data folder.
+* **Initial Data Review and Cleaning**: The data was reviewed for duplicates, missing values, and incorrect datatypes. Any necessary cleaning was completed before analysis began.
+* **Exploratory Data Analysis and Visualisation**: Visualisation techniques (such as boxplots, scatter plots, bar charts, line plots, and violin plots) have been used explore the data. Chart types were seleceted based on what best suited the data being compared and the hypotheses being tested. 
 
 ## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
+* The Rationale to Map the Business Requirements to the Data Visualisations
+
+The aim of this project was to understand how different factors influence healthcare insurance charges in the United States (this type of information can help with predictive analysis of charges, and can help identify risks). Visualisation was the main tool used to explore patterns, compare groups, and test hypotheses. Here's how the business questions were mapped to the visual tools used:
+
+- Are smokers charged more than non-smokers?
+- Visualisations used: Boxplots, scatter plots, histograms, KDE plots and seaborn lineplot.
+
+I used these charts as they clearly show the distribution and spread of charges for smokers vs non-smokers, making differences easy to spot. Scatter plots also reveal how charges escalate with other variables (like age and BMI) depending on smoking status.
+
+- Does BMI affect medical insurance charges?
+- Visualisations used: Scatter plots, line (rounded BMI values), and boxplots (with BMI categories).
+
+I used scatter plots and box plots as BMI is a continuous variable, so scatter plots were helpful for spotting trends. Grouping BMI into medical categories made patterns easier to interpret and allowed visual comparisons across standardised health risk groups.
+
+- Do charges increase with age?
+- Visualisations used: Line plots (with age groups), scatter plots with trendlines.
+
+As age is a continuous variable, plotting it with line and scatter plots helped to show the gradual increase in charges with age. Adding a trendline made the pattern clearer.
+
+- Does region influence charges?
+- Visualisations used: Boxplots and violin plots by region.
+
+I used a boxpolt and fond limited inflrunce that region inflyuenced charges. I then used a violin plot to delve deeper. The plot tpyes made it easy to compare distributions across the four regions. These visuals helped confirm that region had limited influence.
+
+- Do other demographic factors (like sex and number of children) affect charges?
+- Visualisations used: Boxplots with smoker hue
+
+These visuals were used to test for patterns, but helped show that sex and number of children do not appear to be strong predictors of insurance charges in this dataset.
 
 ## Analysis techniques used
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+* I used visual exploratory analysis (EDA) as my primary method for indentifying relationships and trends within the dataset. The main focus was on understanding how different factors (such as BMI, age and smoking status) relate to healthcare insurance costs. 
+* Methods used:
+- Boxplots: to show distributions and spot differences between categories (e.g. smoker vs non-smoker).
+- Scatter plots: for exploring continuous variables like age and BMI in relation to charges.
+- A violin plot: to show shape and spread of distribution (to delve deeper in a region based comparison).
+- Histograms and KDE plots: to show charge distributions for smokers vs non-smokers.
+- Line plots: used for trends across binned ages and rounded BMI values.
 
-## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
+I tested each business question with a visualisation that best suited the variable types (categorical vs numerical, numerical vs numerical, and category vs categeory). For example:
+- BMI was continuous, so I used scatter plots first, then grouped it into medical categories to simplify as the first plot was too noisy.
+- Region was categorical, so I used box and violin plots to compare spreads. I used resources such as data to Viz to help guide me on what might work best (https://www.data-to-viz.com/).
+* ** Limitation and alternative approaches: **
+- Some variables (like region, number of children and sex) showed little variation or impact on charges, limiting their usefulness in drawing insights and conclusions. 
+- BMI values were unevely distributed. I tried a line plot using rounded values, and found some limitations within the dataset information in the higher ranges.
+* ** Use of generative AI tools: **
+- I used CoPilot when writing code to help troubleshoot, use of this also sped up commenting my code. 
+- I used Chat GPT 4.0 to also help debug code, and suggest clearer vsualisation choices.
+- I have used Chat GPT 4.0 to check my markdown, and help review my work for clarity.
+
+
+## Ethical and legal considerations
+* The dataset used in this project is sourced from Kaggle and is intended for learning and practice. It does not contain real personal data, so it does not pose any direct privacy or ethical risks in its use.
+
+However, the dataset represents real-world, sensitive personal attributes such as age, BMI, and smoking status. This could raise ethical questions around how such data is used, particularly if it were applied in real settings to make decisions (e.g. refusing insurance cover or setting higher premiums for certain groups).
+
+While this project does not involve predictive modelling or decision-making, it’s important to remain aware of these implications when working with data related to health, lifestyle, or demographic factors.
+
 
 ## Dashboard Design
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
@@ -79,7 +127,6 @@ I will use visualisations like boxplots, scatter plots and bar charts to compare
 
 * For help choosing apppropraite visualisation types, I referred to [data to Viz]: https://www.data-to-viz.com/#line, and my tutorial notebooks developed whioole working through the Code Insitute LMS. 
 * I used the CDC (U.S. Centers for Disease Control and Prevention) website for medical BMI catgeory groupings https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html?CDC_AAref_Val=https://www.cdc.gov/obesity/basics/adult-defining.html
-
 * I received support from my tutor Vasi for resolviong coding issues and understanding how to approach certain tasks.
 * I have used Chat GPT 4.0 and GitHub CoPilot to debug code, understand errors, and explore different ways to write and (or improve) functions and code.
 
