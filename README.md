@@ -90,19 +90,60 @@ While this project does not involve predictive modelling or decision-making, itâ
 
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+*The project does not include a formal dashboard, as the focus is on exploratory data analysis and visualisation using Jupyter Notebooks.
+However, the notebook has been structured in a clear and logical way to serve a similar function, walking the user through the insights step by step. The combination of markdown commentary and visuals is designed to communicate findings to both technical and non-technical audiences.
+Visuals are varied to suit different preferences (e.g. scatter plots, boxplots, violin plots, line plots, histograms). Some less successful plots have been kept to show the exploratory process and demonstrate why certain chart types were chosen over others.
+Annotations, titles, and axis labels were added to support understanding without needing to read raw code. I have used comments explain what each plot is trying to show (and what the key insights are) for both technical and non-technical audiences.
 
 ## Unfixed Bugs
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+* There is one small bug in the Jupyter notebook related to the use of a try block for creating folders with os.makedirs. The code below was included:
+
+import os
+try:
+  # create your folder here
+  # os.makedirs(name='')
+except Exception as e:
+  print(e)
+
+As this section was not essential to the functioning of the notebook (and the folder structure was already in place), the bug was left unfixed. It does not affect the analysis or outputs of the project.
+
+## Knowledge Gaps
+A few knowledge gaps were identified around:
+- selecting most appropriate data visualisation types
+- managing code errors
+- identifying that an upgrade patch was needed for Plotly to display correctly
+These were addressed by:
+- experimenting with plot types
+- seeking help from my tutor
+- using online resources like 'data to Viz'
+- using tools like CoPilot and ChatGPT to debug, explore alternatives, and understand syntax
 
 ## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
+**Development Roadmap**
+
+- Challenges faced:
+-- Choosing the most effective visualisation types for different data relationships
+-- Folder and file structure not being recognised and realised I needed to restart my kernel!
+-- Managing early bugs and syntax issues, especially when switching between libraries like Seaborn, Matplotlib, and Plotly
+-- Interpreting charts accurately and drawing clear conclusions
+- Strategies used:
+-- Reviewing course notes and tutorial notebooks
+-- Asking for help from my tutor
+-- Using online tools like ChatGPT and GitHub Copilot for debugging and testing alternative approaches
+- Next steps:
+-- Build confidence in interpreting and presenting data insights
+-- Explore more advanced visualisation techniques and interactive dashboards
+-- Strengthen skills in hypothesis testing and statistical analysis
+
+## Conclusion
+In this project I set out to explore how personal, lifestyle, and regional factors influence healthcare insurance charges using a publicly available Kaggle dataset. Through visual analysis, I identified several key insights:
+- Smoking status had the strongest impact on charges, with smokers consistently incurring much higher costs.
+- BMI and age were also strong predictors, particularly when combined with smoking.
+- Region, sex, and number of children showed little to no significant effect on charges in this dataset.
+
+Using a range of visualisation techniques (including Matplotlib, Seaborn, and Plotly), I tested each hypothesis and refined the approach as insights became visible. Some visuals were included even where clarity was lower, to demonstrate the exploratory process and support learning.
+
+The project met its goal (to uncover relationships in the data and explain what influences variations in insurance charges), and demonstrate skills in data cleaning, visual data analysis, and data driven storytelling.
 
 ## Deployment
 ### Heroku
@@ -120,7 +161,7 @@ While this project does not involve predictive modelling or decision-making, itâ
 
 
 ## Main Data Analysis Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+* Pandas, Matplotlib, Seaborn, Plotly
 
 
 ## Credits 
