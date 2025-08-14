@@ -100,6 +100,7 @@ A few knowledge gaps were identified around:
 - selecting most appropriate data visualisation types
 - managing code errors
 - identifying that an upgrade patch was needed for Plotly to display correctly
+
 These were addressed by:
 - experimenting with plot types
 - seeking help from my tutor
