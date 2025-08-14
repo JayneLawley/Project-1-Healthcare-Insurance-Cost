@@ -43,7 +43,7 @@ As age is a continuous variable, plotting it with line and scatter plots helped 
 
 **Does region influence charges?**
 - Visualisations used: Boxplots and violin plots by region.
-I used a boxplot and found limited evidence that region influenced charges. I then used a violin plot to delve deeper. The plot tpyes made it easy to compare distributions across the four regions. These visuals helped confirm that region had limited influence.
+I used a boxplot and found limited evidence that region influenced charges. I then used a violin plot to delve deeper. The plot types made it easy to compare distributions across the four regions. These visuals helped confirm that region had limited influence.
 
 **Do other demographic factors (like sex and number of children) affect charges?**
 - Visualisations used: Boxplots with smoker hue
