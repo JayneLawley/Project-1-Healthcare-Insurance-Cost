@@ -78,6 +78,8 @@ I will use visualisations like boxplots, scatter plots and bar charts to compare
 ## Credits 
 
 * For help choosing apppropraite visualisation types, I referred to [data to Viz]: https://www.data-to-viz.com/#line, and my tutorial notebooks developed whioole working through the Code Insitute LMS. 
+* I used the CDC (U.S. Centers for Disease Control and Prevention) website for medical BMI catgeory groupings https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html?CDC_AAref_Val=https://www.cdc.gov/obesity/basics/adult-defining.html
+
 * I received support from my tutor Vasi for resolviong coding issues and understanding how to approach certain tasks.
 * I have used Chat GPT 4.0 and GitHub CoPilot to debug code, understand errors, and explore different ways to write and (or improve) functions and code.
 
