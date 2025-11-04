@@ -4,7 +4,7 @@
 This project explores how personal and geographic factors (such as age, gender, BMI, smoking status, and region) influence insurance costs. The aim is to examine patterns and relationships in the data to better understand what drives variations in healthcare charges, using visual exploration and summary insights to explain the findings.
 
 ## Dataset Content
-* The dataset contains information about individual's age, gender, body mass index (BMI), number of children, smoking status, and region within the United States in relation to the medical insurance charges they were charged.
+* The dataset contains information about people's age, gender, body mass index (BMI), number of children, smoking status, and region within the United States in relation to the medical insurance charges they were charged.
 
 ## Business Requirements
 * To understand how different geographical, personal and lifestyle factors affect healthcare insurance costs in the United States, in order to improve cost estimation, support pricing strategies and identify areas of customer risk.
@@ -22,7 +22,7 @@ I will use visualisations like boxplots, scatter plots and bar charts to compare
  
 
 ## Project Plan
-* **Data Collection and setup**: The dataset was downloaded from Kaggle and saved as csv file into the 'raw' data folder.
+* **Data Collection and setup**: The dataset was downloaded from Kaggle and saved as a csv file into the 'raw' data folder.
 * **Initial Data Review and Cleaning**: The data was reviewed for duplicates, missing values, and incorrect datatypes. Any necessary cleaning was completed before analysis began.
 * **Exploratory Data Analysis and Visualisation**: Visualisation techniques (such as boxplots, scatter plots, bar charts, line plots, and violin plots) have been used to explore the data. Chart types were selected based on what best suited the data being compared and the hypotheses being tested. 
 
@@ -51,7 +51,7 @@ These visuals were used to test for patterns, but helped show that sex and numbe
 
 ## Analysis techniques used
 
-I used visual exploratory analysis (EDA) as my primary method for indentifying relationships and trends within the dataset. The main focus was on understanding how different factors (such as BMI, age and smoking status) relate to healthcare insurance costs. 
+I used visual exploratory analysis (EDA) as my primary method for identifying relationships and trends within the dataset. The main focus was on understanding how different factors (such as BMI, age and smoking status) relate to healthcare insurance costs. 
 **Methods used:**
 - Boxplots: to show distributions and spot differences between categories (e.g. smoker vs non-smoker).
 - Scatter plots: for exploring continuous variables like age and BMI in relation to charges.
@@ -84,16 +84,6 @@ While this project does not involve predictive modelling or decision-making, itâ
 - The project does not include a formal dashboard, as the focus is on exploratory data analysis and visualisation using Jupyter Notebooks. However, the notebook has been structured in a clear and logical way to serve a similar function, walking the user through the insights step by step. The combination of markdown commentary and visuals is designed to communicate findings to both technical and non-technical audiences.
 - A range of visual types were used to suit different audiences (e.g. scatter plots, boxplots, violin plots, line plots, histograms). Some less successful plots have been kept to show the exploratory process and demonstrate why certain chart types were chosen over others.
 - Annotations, titles, and axis labels were added to support understanding without needing to read raw code. I have used comments to explain what each plot is trying to show (and what the key insights are) for both technical and non-technical audiences.
-
-## Unfixed Bugs
-- There was one small bug in the Jupyter notebook related to a code block intended for folder creation. The code is shown below:
-import os  
-try:  
-  # create your folder here  
-  # os.makedirs(name='')  
-except Exception as e:  
-  print(e)
-As this section was not essential to the functioning of the notebook, and was intended to be replaced with a conclusion section later. This code has since been removed.It did not affect analysis, or outputs, during project development.
 
 ## Knowledge Gaps
 A few knowledge gaps were identified around:
@@ -132,26 +122,13 @@ Using a range of visualisation techniques (including Matplotlib, Seaborn, and Pl
 
 The project met its goal (to uncover relationships in the data and explain what influences variations in insurance charges). It also allowed me to develop and demonstrate skills in data cleaning, visual data analysis, and data driven storytelling.
 
-### Heroku
-
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
-
 ## Main Data Analysis Libraries
 * Pandas, Matplotlib, Seaborn, Plotly
 
 ## Credits 
-* For help choosing apppropriate visualisation types, I referred to [data to Viz]: https://www.data-to-viz.com/#line, and my tutorial notebooks developed while working through the Code Insitute LMS. 
+* For help choosing appropriate visualisation types, I referred to [data to Viz]: https://www.data-to-viz.com/#line, and my tutorial notebooks developed while working through the Code Institute LMS. 
 * I used the CDC (U.S. Centers for Disease Control and Prevention) website for medical BMI category groupings https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html?CDC_AAref_Val=https://www.cdc.gov/obesity/basics/adult-defining.html
-* I received support from my tutor Vasi Pavaloi for resolviong coding issues and understanding how to approach certain tasks.
+* I received support from my tutor Vasi Pavaloi for resolving coding issues and understanding how to approach certain tasks.
 * I have used Chat GPT 4.0 and GitHub CoPilot to debug code, understand errors, and explore different ways to write and (or improve) functions and code.
 
 ### Content 
