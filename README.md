@@ -52,6 +52,7 @@ These visuals were used to test for patterns, but helped show that sex and numbe
 ## Analysis techniques used
 
 I used visual exploratory analysis (EDA) as my primary method for identifying relationships and trends within the dataset. The main focus was on understanding how different factors (such as BMI, age and smoking status) relate to healthcare insurance costs. 
+
 **Methods used:**
 - Boxplots: to show distributions and spot differences between categories (e.g. smoker vs non-smoker).
 - Scatter plots: for exploring continuous variables like age and BMI in relation to charges.
@@ -99,18 +100,18 @@ These were addressed by:
 
 ## Development Roadmap
 - Challenges faced:
-    Choosing the most effective visualisation types for different data relationships
-    Folder and file structure not being recognised and realised I needed to restart my kernel!
-    Managing early bugs and syntax issues, especially when switching between libraries like Seaborn, Matplotlib, and Plotly
-    Interpreting charts accurately and drawing clear conclusions
+    - Choosing the most effective visualisation types for different data relationships
+    - Folder and file structure not being recognised and realised I needed to restart my kernel!
+    - Managing early bugs and syntax issues, especially when switching between libraries like Seaborn, Matplotlib, and Plotly
+    - Interpreting charts accurately and drawing clear conclusions
 - Strategies used:
-    Reviewing course notes and tutorial notebooks
-    Asking for help from my tutor
-    Using online tools like ChatGPT and GitHub Copilot for debugging and testing alternative approaches
+    - Reviewing course notes and tutorial notebooks
+    - Asking for help from my tutor
+    - Using online tools like ChatGPT and GitHub Copilot for debugging and testing alternative approaches
 - Next steps:
-    Build confidence in interpreting and presenting data insights
-    Explore more advanced visualisation techniques and interactive dashboards
-    Strengthen skills in hypothesis testing and statistical analysis
+    - Build confidence in interpreting and presenting data insights
+    - Explore more advanced visualisation techniques and interactive dashboards 
+    - Strengthen skills in hypothesis testing and statistical analysis
 
 ## Conclusion
 In this project I set out to explore how personal, lifestyle, and regional factors influence healthcare insurance charges using a publicly available Kaggle dataset. Through visual analysis, I identified several key insights:
@@ -140,5 +141,5 @@ The project met its goal (to uncover relationships in the data and explain what 
 - The photos used on the home and sign-up page are from This Open-Source site
 - The images used for the gallery page were taken from this other open-source site
 
-## Acknowledgements (optional)
+## Acknowledgements 
 * Thank you to Vasi who has provided support through this project.
